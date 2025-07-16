@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Membership Registration</title>
+</head>
+<body>
+    <h2>Club Membership Registration Form</h2>
+    <form>
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say">
+        <label for="preferNotToSay">Prefer not to say</label><br><br>
+
+        <!-- Club Type -->
+        <label for="club">Club Type:</label><br>
+        <select id="club" name="club" required>
+            <option value="">--Select a Club--</option>
+            <option value="sports">Sports Club</option>
+            <option value="music">Music Club</option>
+            <option value="art">Art Club</option>
+        </select><br><br>
+
+        <!-- Reason for Joining -->
+        <label for="reason">Reason for Joining:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="40" required></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
